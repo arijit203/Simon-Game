@@ -17,7 +17,7 @@ function nextSequence(){
 }
 
 function playSound(name){
-    new Audio("sounds/" + name + ".mp3").play();
+    new Audio( name + ".mp3").play();
 }
 $(".btn").click(function(){
     var userChosenColour=$(this).attr("id");
@@ -50,7 +50,7 @@ function checkAnswer(currentLevel){
   }
   else{
     //console.log("Failure");
-    new Audio("sounds/wrong.mp3").play();
+    new Audio("wrong.mp3").play();
     $("body").addClass("game-over");
     setTimeout(function(){
       $("body").removeClass("game-over");
