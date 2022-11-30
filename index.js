@@ -1,4 +1,4 @@
-
+$("h1").css("color","red");
 var buttonColours=["red","blue","green","yellow"];
 var gamePattern=[];
 var level=0;
